@@ -30,7 +30,7 @@ module "compute" {
   vm_name             = var.vm_name
 
   subnet_id    = module.network.subnet_id
-  public_ip_id = module.network.public_ip_address
+  public_ip_id = module.network.public_ip_id
   ssh_key      = var.ssh_key
 }
 

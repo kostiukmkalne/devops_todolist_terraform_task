@@ -34,7 +34,7 @@ resource "azurerm_public_ip" "linuxboxpip" {
   name                = "linuxboxpip"
   resource_group_name = var.resource_group_name
   location            = var.location
-  allocation_method   = "Static"
+  allocation_method   = "Dynamic"
   domain_name_label   = "${var.dns_label_prefix}${random_integer.random.result}"
 }
 

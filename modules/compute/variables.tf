@@ -27,3 +27,8 @@ variable "ssh_key" {
   description = "The SSH public key for authentication."
   type        = string
 }
+
+variable "public_ip_id" {
+  description = "ID of the public IP address from the network module"
+  type        = string
+}
